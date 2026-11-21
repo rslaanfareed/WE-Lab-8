@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #202938;
+    line-height: 1.5;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #17243a;
+    color: white;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: #e5eaf2;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #8ed4c2;
+}
+
+.hero {
+    padding: 65px 7% 55px;
+    background: linear-gradient(120deg, #e0f2ef, #edf1fa);
+}
+
+.eyebrow {
+    color: #16816e;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 10px 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.hero > p:last-child {
+    margin-top: 12px;
+    color: #586477;
+}
+
+.products-section {
+    padding: 48px 7% 65px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    margin-top: 5px;
+    font-size: 1.8rem;
+}
+
+.product-count {
+    color: #687386;
+    font-size: 0.9rem;
+}
+
+/* Responsive grid: cards are at least 250px wide.
+   auto-fit creates as many columns as can fit in the container. */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.product-card {
+    overflow: hidden;
+    background: white;
+    border: 1px solid #e2e7ef;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(28, 43, 66, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 26px rgba(28, 43, 66, 0.14);
+}
+
+.product-image {
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.image-one { background: linear-gradient(135deg, #344b70, #7895bd); }
+.image-two { background: linear-gradient(135deg, #8a6d52, #d0ad7e); }
+.image-three { background: linear-gradient(135deg, #405c5b, #8bb8a6); }
+.image-four { background: linear-gradient(135deg, #5b526f, #a99ac7); }
+.image-five { background: linear-gradient(135deg, #397b87, #8dc4c7); }
+.image-six { background: linear-gradient(135deg, #4b5563, #9ca9b8); }
+
+.product-info {
+    padding: 18px;
+}
+
+.category {
+    color: #16816e;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-info h3 {
+    margin: 5px 0;
+    font-size: 1.15rem;
+}
+
+.description {
+    min-height: 44px;
+    color: #687386;
+    font-size: 0.9rem;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 17px;
+}
+
+.card-bottom strong {
+    color: #17243a;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    padding: 9px 13px;
+    background: #16816e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #106655;
+}
+
+footer {
+    padding: 22px 7%;
+    background: #17243a;
+    color: #dce3ed;
+    text-align: center;
+    font-size: 0.9rem;
+}
